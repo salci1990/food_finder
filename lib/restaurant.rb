@@ -49,13 +49,13 @@ class Restaurant
     restaurant = Restaurant.new
 		args ={}
 		print"Restaurant name: "
-		args[:name] = gets.chomp.strip
+		args[:name] = gets.chomp.strip.upcase
 
     print"Cuisine Type: "
-		args[:cuisine] = gets.chomp.strip
+		args[:cuisine] = gets.chomp.strip.upcase
 
 		print"Average priece: "
-		args[:price] = gets.chomp.strip
+		args[:price] = gets.chomp.strip.upcase
 		 
 		return self.new(args)
 	end
