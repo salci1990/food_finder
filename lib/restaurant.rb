@@ -45,7 +45,7 @@ class Restaurant
 		return restaurants
 	end	
 	
-	def self.biuld_using_questions
+	def self.build_using_questions
     restaurant = Restaurant.new
 		args ={}
 		print"Restaurant name: "
@@ -63,15 +63,15 @@ class Restaurant
 		print"Average priece: "
 		args[:price] = gets.chomp.strip.upcase
 			if args[:price] == ""
-		args[:price] << "not defind"
+		args[:price] << "00"
 		end
 	
 		return self.new(args)
 	end
 	def initialize(args={})
-		@name =    args[:name]    || ""
-		@cuisine = args[:cuisine] || ""
-		@price =   args[:price]   || ""
+		@name =    args[:name]    || "not defind"
+		@cuisine = args[:cuisine] || "not defind"
+		@price =   args[:price]   || "not defind"
 	end
 
 	def import_line(line)
