@@ -50,16 +50,18 @@ class Restaurant
 		args ={}
 		print"Restaurant name: "
 		args[:name] = gets.chomp.strip.upcase
+		args[:name] << "not defind"
 
     print"Cuisine Type: "
 		args[:cuisine] = gets.chomp.strip.upcase
+		args[:cuisine] << "not defind"
 
 		print"Average priece: "
 		args[:price] = gets.chomp.strip.upcase
-		 
+		args[:price] << "not defind"
+
 		return self.new(args)
 	end
-	
 	def initialize(args={})
 		@name =    args[:name]    || ""
 		@cuisine = args[:cuisine] || ""

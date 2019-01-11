@@ -1,2 +1,9 @@
 DaGrasso	pizza	20
 Marona	Kebz	10
+PKP	MAKARONE	12
+	MILK	3
+	CACAO	4
+		10
+	PITA	5
+not defind	KROMA Z MASLEM	2
+not defind	not defind	not defind
