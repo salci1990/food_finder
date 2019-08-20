@@ -103,7 +103,7 @@ class Guide
 
 	def add
 		output_action_header("Add a restaurant")
-		restaurants = Restaurant.biuld_using_questions
+		restaurants = Restaurant.build_using_questions
 
 		if restaurants.save
 			puts "\nRestaurant Added\n\n"
@@ -128,7 +128,7 @@ class Guide
 	end
 
 	def output_restaurant_table(restaurants=[])
-		print " " + "Name".ljust(30)
+		print " " + "Name".ljust(30) 
 		print " " + "Cuisine".ljust(20)
 		print " " + "Price".rjust(6) + "\n"
 		puts "-" * 60
